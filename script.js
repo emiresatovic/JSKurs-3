@@ -54,13 +54,19 @@ window.addEventListener('resize', () => {
 });
 
 let input = document.querySelector('input');
-
+// kada se pritisne backspace izbaci alert
 input.addEventListener("keydown", (event) => {
-    if(event.key === "Delete") {
+    if(event.key === "Backspace") {
         alert('obrisano');
 
     }
-})
+});
+
+
+// pomjeranjem misa unutar forme u konzoli ispise mis pomjeren
+input.addEventListener('mousemove',(event) => {
+    console.log('mis pomjeren');
+});
 
 
 
